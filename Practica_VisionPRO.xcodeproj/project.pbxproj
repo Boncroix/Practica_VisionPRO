@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42E8F6F12C1A39290042F91B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 42E8F6F02C1A39290042F91B /* RealityKitContent */; };
+		42E8F6F32C1A39290042F91B /* Practica_VisionPROApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F6F22C1A39290042F91B /* Practica_VisionPROApp.swift */; };
+		42E8F6F92C1A392B0042F91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E8F6F82C1A392B0042F91B /* Assets.xcassets */; };
+		42E8F6FC2C1A392B0042F91B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E8F6FB2C1A392B0042F91B /* Preview Assets.xcassets */; };
+		42E8F7072C1A392B0042F91B /* Practica_VisionPROTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7062C1A392B0042F91B /* Practica_VisionPROTests.swift */; };
+		42E8F7172C1A3A240042F91B /* MarvelAppLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 42E8F7162C1A3A240042F91B /* MarvelAppLibrary */; };
+		42E8F7222C1A3AFE0042F91B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7212C1A3AFE0042F91B /* RootView.swift */; };
+		42E8F7242C1A3B100042F91B /* HerosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7232C1A3B100042F91B /* HerosListView.swift */; };
+		42E8F7262C1A3B250042F91B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7252C1A3B250042F91B /* DetailView.swift */; };
+		42E8F7282C1A3B3D0042F91B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7272C1A3B3D0042F91B /* ErrorView.swift */; };
+		42E8F72A2C1A3B4C0042F91B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7292C1A3B4C0042F91B /* LoadingView.swift */; };
+		42E8F72C2C1A3B5A0042F91B /* SubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F72B2C1A3B5A0042F91B /* SubViews.swift */; };
+		42E8F72E2C1A3B790042F91B /* HerosVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F72D2C1A3B790042F91B /* HerosVIewModel.swift */; };
+		42E8F7302C1A3B840042F91B /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F72F2C1A3B840042F91B /* DetailViewModel.swift */; };
+		42E8F7322C1A3BC10042F91B /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7312C1A3BC00042F91B /* Status.swift */; };
+		42E8F7342C1A3C970042F91B /* SeriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7332C1A3C970042F91B /* SeriesRepository.swift */; };
+		42E8F7362C1A3CC50042F91B /* HerosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7352C1A3CC50042F91B /* HerosRepository.swift */; };
+		42E8F7382C1A3CF30042F91B /* SeriesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7372C1A3CF30042F91B /* SeriesRepositoryProtocol.swift */; };
+		42E8F73A2C1A3D0A0042F91B /* HerosRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7392C1A3D0A0042F91B /* HerosRepositoryProtocol.swift */; };
+		42E8F73C2C1A3D310042F91B /* SeriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F73B2C1A3D310042F91B /* SeriesUseCase.swift */; };
+		42E8F73E2C1A3D4A0042F91B /* HerosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F73D2C1A3D4A0042F91B /* HerosUseCase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42E8F7032C1A392B0042F91B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42E8F6E32C1A39280042F91B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42E8F6EA2C1A39280042F91B;
+			remoteInfo = Practica_VisionPRO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42E8F6EB2C1A39280042F91B /* Practica_VisionPRO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practica_VisionPRO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42E8F6EF2C1A39290042F91B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		42E8F6F22C1A39290042F91B /* Practica_VisionPROApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica_VisionPROApp.swift; sourceTree = "<group>"; };
+		42E8F6F82C1A392B0042F91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42E8F6FB2C1A392B0042F91B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		42E8F6FD2C1A392B0042F91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42E8F7022C1A392B0042F91B /* Practica_VisionPROTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Practica_VisionPROTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42E8F7062C1A392B0042F91B /* Practica_VisionPROTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica_VisionPROTests.swift; sourceTree = "<group>"; };
+		42E8F7212C1A3AFE0042F91B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		42E8F7232C1A3B100042F91B /* HerosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListView.swift; sourceTree = "<group>"; };
+		42E8F7252C1A3B250042F91B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		42E8F7272C1A3B3D0042F91B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		42E8F7292C1A3B4C0042F91B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		42E8F72B2C1A3B5A0042F91B /* SubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViews.swift; sourceTree = "<group>"; };
+		42E8F72D2C1A3B790042F91B /* HerosVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosVIewModel.swift; sourceTree = "<group>"; };
+		42E8F72F2C1A3B840042F91B /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		42E8F7312C1A3BC00042F91B /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		42E8F7332C1A3C970042F91B /* SeriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesRepository.swift; sourceTree = "<group>"; };
+		42E8F7352C1A3CC50042F91B /* HerosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosRepository.swift; sourceTree = "<group>"; };
+		42E8F7372C1A3CF30042F91B /* SeriesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		42E8F7392C1A3D0A0042F91B /* HerosRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosRepositoryProtocol.swift; sourceTree = "<group>"; };
+		42E8F73B2C1A3D310042F91B /* SeriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesUseCase.swift; sourceTree = "<group>"; };
+		42E8F73D2C1A3D4A0042F91B /* HerosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosUseCase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42E8F6E82C1A39280042F91B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E8F6F12C1A39290042F91B /* RealityKitContent in Frameworks */,
+				42E8F7172C1A3A240042F91B /* MarvelAppLibrary in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42E8F6FF2C1A392B0042F91B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42E8F6E22C1A39280042F91B = {
+			isa = PBXGroup;
+			children = (
+				42E8F6ED2C1A39280042F91B /* Practica_VisionPRO */,
+				42E8F6EE2C1A39290042F91B /* Packages */,
+				42E8F7052C1A392B0042F91B /* Practica_VisionPROTests */,
+				42E8F6EC2C1A39280042F91B /* Products */,
+				42E8F7152C1A3A240042F91B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42E8F6EC2C1A39280042F91B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F6EB2C1A39280042F91B /* Practica_VisionPRO.app */,
+				42E8F7022C1A392B0042F91B /* Practica_VisionPROTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42E8F6ED2C1A39280042F91B /* Practica_VisionPRO */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7132C1A39CC0042F91B /* Presentations */,
+				42E8F7122C1A39C90042F91B /* Domain */,
+				42E8F7112C1A39C60042F91B /* Data */,
+				42E8F7102C1A39AD0042F91B /* Resources */,
+				42E8F6F22C1A39290042F91B /* Practica_VisionPROApp.swift */,
+				42E8F6FD2C1A392B0042F91B /* Info.plist */,
+				42E8F6FA2C1A392B0042F91B /* Preview Content */,
+			);
+			path = Practica_VisionPRO;
+			sourceTree = "<group>";
+		};
+		42E8F6EE2C1A39290042F91B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F6EF2C1A39290042F91B /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		42E8F6FA2C1A392B0042F91B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F6FB2C1A392B0042F91B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		42E8F7052C1A392B0042F91B /* Practica_VisionPROTests */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7062C1A392B0042F91B /* Practica_VisionPROTests.swift */,
+			);
+			path = Practica_VisionPROTests;
+			sourceTree = "<group>";
+		};
+		42E8F7102C1A39AD0042F91B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F6F82C1A392B0042F91B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		42E8F7112C1A39C60042F91B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7182C1A3A6E0042F91B /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		42E8F7122C1A39C90042F91B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F71B2C1A3AAC0042F91B /* Entities */,
+				42E8F71A2C1A3AA20042F91B /* UseCases */,
+				42E8F7192C1A3A990042F91B /* Protocols */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		42E8F7132C1A39CC0042F91B /* Presentations */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F71C2C1A3ABA0042F91B /* Views */,
+			);
+			path = Presentations;
+			sourceTree = "<group>";
+		};
+		42E8F7152C1A3A240042F91B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42E8F7182C1A3A6E0042F91B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7332C1A3C970042F91B /* SeriesRepository.swift */,
+				42E8F7352C1A3CC50042F91B /* HerosRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		42E8F7192C1A3A990042F91B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7372C1A3CF30042F91B /* SeriesRepositoryProtocol.swift */,
+				42E8F7392C1A3D0A0042F91B /* HerosRepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		42E8F71A2C1A3AA20042F91B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F73B2C1A3D310042F91B /* SeriesUseCase.swift */,
+				42E8F73D2C1A3D4A0042F91B /* HerosUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		42E8F71B2C1A3AAC0042F91B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7312C1A3BC00042F91B /* Status.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		42E8F71C2C1A3ABA0042F91B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7202C1A3ADF0042F91B /* Root */,
+				42E8F71E2C1A3AD00042F91B /* Heros */,
+				42E8F71F2C1A3AD60042F91B /* Detail */,
+				42E8F71D2C1A3AC40042F91B /* Tools */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42E8F71D2C1A3AC40042F91B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7272C1A3B3D0042F91B /* ErrorView.swift */,
+				42E8F7292C1A3B4C0042F91B /* LoadingView.swift */,
+				42E8F72B2C1A3B5A0042F91B /* SubViews.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		42E8F71E2C1A3AD00042F91B /* Heros */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7232C1A3B100042F91B /* HerosListView.swift */,
+				42E8F72D2C1A3B790042F91B /* HerosVIewModel.swift */,
+			);
+			path = Heros;
+			sourceTree = "<group>";
+		};
+		42E8F71F2C1A3AD60042F91B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7252C1A3B250042F91B /* DetailView.swift */,
+				42E8F72F2C1A3B840042F91B /* DetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		42E8F7202C1A3ADF0042F91B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7212C1A3AFE0042F91B /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42E8F6EA2C1A39280042F91B /* Practica_VisionPRO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42E8F70A2C1A392B0042F91B /* Build configuration list for PBXNativeTarget "Practica_VisionPRO" */;
+			buildPhases = (
+				42E8F6E72C1A39280042F91B /* Sources */,
+				42E8F6E82C1A39280042F91B /* Frameworks */,
+				42E8F6E92C1A39280042F91B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Practica_VisionPRO;
+			packageProductDependencies = (
+				42E8F6F02C1A39290042F91B /* RealityKitContent */,
+				42E8F7162C1A3A240042F91B /* MarvelAppLibrary */,
+			);
+			productName = Practica_VisionPRO;
+			productReference = 42E8F6EB2C1A39280042F91B /* Practica_VisionPRO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42E8F7012C1A392B0042F91B /* Practica_VisionPROTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42E8F70D2C1A392B0042F91B /* Build configuration list for PBXNativeTarget "Practica_VisionPROTests" */;
+			buildPhases = (
+				42E8F6FE2C1A392B0042F91B /* Sources */,
+				42E8F6FF2C1A392B0042F91B /* Frameworks */,
+				42E8F7002C1A392B0042F91B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42E8F7042C1A392B0042F91B /* PBXTargetDependency */,
+			);
+			name = Practica_VisionPROTests;
+			productName = Practica_VisionPROTests;
+			productReference = 42E8F7022C1A392B0042F91B /* Practica_VisionPROTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42E8F6E32C1A39280042F91B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					42E8F6EA2C1A39280042F91B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					42E8F7012C1A392B0042F91B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 42E8F6EA2C1A39280042F91B;
+					};
+				};
+			};
+			buildConfigurationList = 42E8F6E62C1A39280042F91B /* Build configuration list for PBXProject "Practica_VisionPRO" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42E8F6E22C1A39280042F91B;
+			packageReferences = (
+				42E8F7142C1A3A190042F91B /* XCRemoteSwiftPackageReference "MarvelAppLibrary" */,
+			);
+			productRefGroup = 42E8F6EC2C1A39280042F91B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42E8F6EA2C1A39280042F91B /* Practica_VisionPRO */,
+				42E8F7012C1A392B0042F91B /* Practica_VisionPROTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42E8F6E92C1A39280042F91B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E8F6FC2C1A392B0042F91B /* Preview Assets.xcassets in Resources */,
+				42E8F6F92C1A392B0042F91B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42E8F7002C1A392B0042F91B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42E8F6E72C1A39280042F91B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E8F7342C1A3C970042F91B /* SeriesRepository.swift in Sources */,
+				42E8F7282C1A3B3D0042F91B /* ErrorView.swift in Sources */,
+				42E8F7322C1A3BC10042F91B /* Status.swift in Sources */,
+				42E8F7242C1A3B100042F91B /* HerosListView.swift in Sources */,
+				42E8F7262C1A3B250042F91B /* DetailView.swift in Sources */,
+				42E8F7362C1A3CC50042F91B /* HerosRepository.swift in Sources */,
+				42E8F7222C1A3AFE0042F91B /* RootView.swift in Sources */,
+				42E8F73E2C1A3D4A0042F91B /* HerosUseCase.swift in Sources */,
+				42E8F7302C1A3B840042F91B /* DetailViewModel.swift in Sources */,
+				42E8F72E2C1A3B790042F91B /* HerosVIewModel.swift in Sources */,
+				42E8F6F32C1A39290042F91B /* Practica_VisionPROApp.swift in Sources */,
+				42E8F73C2C1A3D310042F91B /* SeriesUseCase.swift in Sources */,
+				42E8F7382C1A3CF30042F91B /* SeriesRepositoryProtocol.swift in Sources */,
+				42E8F72A2C1A3B4C0042F91B /* LoadingView.swift in Sources */,
+				42E8F72C2C1A3B5A0042F91B /* SubViews.swift in Sources */,
+				42E8F73A2C1A3D0A0042F91B /* HerosRepositoryProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42E8F6FE2C1A392B0042F91B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E8F7072C1A392B0042F91B /* Practica_VisionPROTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42E8F7042C1A392B0042F91B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42E8F6EA2C1A39280042F91B /* Practica_VisionPRO */;
+			targetProxy = 42E8F7032C1A392B0042F91B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		42E8F7082C1A392B0042F91B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Debug;
+		};
+		42E8F7092C1A392B0042F91B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Release;
+		};
+		42E8F70B2C1A392B0042F91B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Practica_VisionPRO/Preview Content\"";
+				DEVELOPMENT_TEAM = L6V6H2LAL2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "J.B.C..Marvel-KC.Practica-VisionPRO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		42E8F70C2C1A392B0042F91B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Practica_VisionPRO/Preview Content\"";
+				DEVELOPMENT_TEAM = L6V6H2LAL2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "J.B.C..Marvel-KC.Practica-VisionPRO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		42E8F70E2C1A392B0042F91B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6V6H2LAL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "J.B.C..Marvel-KC.Practica-VisionPROTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Practica_VisionPRO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Practica_VisionPRO";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Debug;
+		};
+		42E8F70F2C1A392B0042F91B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6V6H2LAL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "J.B.C..Marvel-KC.Practica-VisionPROTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Practica_VisionPRO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Practica_VisionPRO";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42E8F6E62C1A39280042F91B /* Build configuration list for PBXProject "Practica_VisionPRO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42E8F7082C1A392B0042F91B /* Debug */,
+				42E8F7092C1A392B0042F91B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42E8F70A2C1A392B0042F91B /* Build configuration list for PBXNativeTarget "Practica_VisionPRO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42E8F70B2C1A392B0042F91B /* Debug */,
+				42E8F70C2C1A392B0042F91B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42E8F70D2C1A392B0042F91B /* Build configuration list for PBXNativeTarget "Practica_VisionPROTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42E8F70E2C1A392B0042F91B /* Debug */,
+				42E8F70F2C1A392B0042F91B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42E8F7142C1A3A190042F91B /* XCRemoteSwiftPackageReference "MarvelAppLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:Boncroix/MarvelAppLibrary.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42E8F6F02C1A39290042F91B /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		42E8F7162C1A3A240042F91B /* MarvelAppLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42E8F7142C1A3A190042F91B /* XCRemoteSwiftPackageReference "MarvelAppLibrary" */;
+			productName = MarvelAppLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 42E8F6E32C1A39280042F91B /* Project object */;
+}
