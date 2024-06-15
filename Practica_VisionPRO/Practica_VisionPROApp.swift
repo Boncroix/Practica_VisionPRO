@@ -7,11 +7,18 @@
 
 import SwiftUI
 
+// MARK: - Main
 @main
 struct Practica_VisionPROApp: App {
+    
+    // MARK: View
     var body: some Scene {
+        
         WindowGroup {
-            // LLamar al root view
+            MainView()
+                .frame(minWidth: 1000, maxWidth: 2000, minHeight: 800, maxHeight: 1600)
         }
+        .windowStyle(.plain)
+        .windowResizability(.contentMinSize)
     }
 }

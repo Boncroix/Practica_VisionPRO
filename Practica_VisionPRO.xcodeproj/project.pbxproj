@@ -3,30 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42211FC02C1B6286003DE79D /* HerosVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42211FBF2C1B6286003DE79D /* HerosVIewModel.swift */; };
+		42211FC62C1B66BF003DE79D /* MarvelAppLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 42211FC52C1B66BF003DE79D /* MarvelAppLibrary */; };
+		42211FC82C1B6BDE003DE79D /* HerosRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42211FC72C1B6BDE003DE79D /* HerosRowView.swift */; };
+		42211FCA2C1B7E31003DE79D /* SeriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42211FC92C1B7E31003DE79D /* SeriesListView.swift */; };
+		42211FCC2C1B7E41003DE79D /* SeriesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42211FCB2C1B7E41003DE79D /* SeriesRowView.swift */; };
+		42211FD32C1CBF4C003DE79D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42211FD22C1CBF4C003DE79D /* RootView.swift */; };
+		42211FD72C1CC14F003DE79D /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42211FD62C1CC14F003DE79D /* ViewModelProtocol.swift */; };
+		4227B7852C1CCE4B001CDB17 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227B7842C1CCE4B001CDB17 /* MainView.swift */; };
+		4227B7872C1D5BF9001CDB17 /* SeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227B7862C1D5BF9001CDB17 /* SeriesViewModel.swift */; };
+		4227B7892C1D5C5B001CDB17 /* SeriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227B7882C1D5C5B001CDB17 /* SeriesUseCase.swift */; };
+		4227B78B2C1D5C6D001CDB17 /* SeriesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227B78A2C1D5C6D001CDB17 /* SeriesRepositoryProtocol.swift */; };
+		4227B78D2C1D5C76001CDB17 /* SeriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227B78C2C1D5C76001CDB17 /* SeriesRepository.swift */; };
+		425C1C2D2C1D95B100E9CDBC /* HerosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C1C2C2C1D95B100E9CDBC /* HerosListView.swift */; };
 		42E8F6F12C1A39290042F91B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 42E8F6F02C1A39290042F91B /* RealityKitContent */; };
 		42E8F6F32C1A39290042F91B /* Practica_VisionPROApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F6F22C1A39290042F91B /* Practica_VisionPROApp.swift */; };
 		42E8F6F92C1A392B0042F91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E8F6F82C1A392B0042F91B /* Assets.xcassets */; };
 		42E8F6FC2C1A392B0042F91B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E8F6FB2C1A392B0042F91B /* Preview Assets.xcassets */; };
 		42E8F7072C1A392B0042F91B /* Practica_VisionPROTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7062C1A392B0042F91B /* Practica_VisionPROTests.swift */; };
-		42E8F7172C1A3A240042F91B /* MarvelAppLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 42E8F7162C1A3A240042F91B /* MarvelAppLibrary */; };
-		42E8F7222C1A3AFE0042F91B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7212C1A3AFE0042F91B /* RootView.swift */; };
-		42E8F7242C1A3B100042F91B /* HerosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7232C1A3B100042F91B /* HerosListView.swift */; };
+		42E8F7242C1A3B100042F91B /* HerosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7232C1A3B100042F91B /* HerosView.swift */; };
 		42E8F7262C1A3B250042F91B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7252C1A3B250042F91B /* DetailView.swift */; };
 		42E8F7282C1A3B3D0042F91B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7272C1A3B3D0042F91B /* ErrorView.swift */; };
 		42E8F72A2C1A3B4C0042F91B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7292C1A3B4C0042F91B /* LoadingView.swift */; };
 		42E8F72C2C1A3B5A0042F91B /* SubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F72B2C1A3B5A0042F91B /* SubViews.swift */; };
-		42E8F72E2C1A3B790042F91B /* HerosVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F72D2C1A3B790042F91B /* HerosVIewModel.swift */; };
-		42E8F7302C1A3B840042F91B /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F72F2C1A3B840042F91B /* DetailViewModel.swift */; };
 		42E8F7322C1A3BC10042F91B /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7312C1A3BC00042F91B /* Status.swift */; };
-		42E8F7342C1A3C970042F91B /* SeriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7332C1A3C970042F91B /* SeriesRepository.swift */; };
 		42E8F7362C1A3CC50042F91B /* HerosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7352C1A3CC50042F91B /* HerosRepository.swift */; };
-		42E8F7382C1A3CF30042F91B /* SeriesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7372C1A3CF30042F91B /* SeriesRepositoryProtocol.swift */; };
 		42E8F73A2C1A3D0A0042F91B /* HerosRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F7392C1A3D0A0042F91B /* HerosRepositoryProtocol.swift */; };
-		42E8F73C2C1A3D310042F91B /* SeriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F73B2C1A3D310042F91B /* SeriesUseCase.swift */; };
 		42E8F73E2C1A3D4A0042F91B /* HerosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F73D2C1A3D4A0042F91B /* HerosUseCase.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42211FBF2C1B6286003DE79D /* HerosVIewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerosVIewModel.swift; sourceTree = "<group>"; };
+		42211FC72C1B6BDE003DE79D /* HerosRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosRowView.swift; sourceTree = "<group>"; };
+		42211FC92C1B7E31003DE79D /* SeriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesListView.swift; sourceTree = "<group>"; };
+		42211FCB2C1B7E41003DE79D /* SeriesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesRowView.swift; sourceTree = "<group>"; };
+		42211FD22C1CBF4C003DE79D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		42211FD62C1CC14F003DE79D /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		4227B7842C1CCE4B001CDB17 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4227B7862C1D5BF9001CDB17 /* SeriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesViewModel.swift; sourceTree = "<group>"; };
+		4227B7882C1D5C5B001CDB17 /* SeriesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesUseCase.swift; sourceTree = "<group>"; };
+		4227B78A2C1D5C6D001CDB17 /* SeriesRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		4227B78C2C1D5C76001CDB17 /* SeriesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesRepository.swift; sourceTree = "<group>"; };
+		425C1C2C2C1D95B100E9CDBC /* HerosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListView.swift; sourceTree = "<group>"; };
 		42E8F6EB2C1A39280042F91B /* Practica_VisionPRO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practica_VisionPRO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E8F6EF2C1A39290042F91B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		42E8F6F22C1A39290042F91B /* Practica_VisionPROApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica_VisionPROApp.swift; sourceTree = "<group>"; };
@@ -49,20 +67,14 @@
 		42E8F6FD2C1A392B0042F91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42E8F7022C1A392B0042F91B /* Practica_VisionPROTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Practica_VisionPROTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E8F7062C1A392B0042F91B /* Practica_VisionPROTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica_VisionPROTests.swift; sourceTree = "<group>"; };
-		42E8F7212C1A3AFE0042F91B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		42E8F7232C1A3B100042F91B /* HerosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListView.swift; sourceTree = "<group>"; };
+		42E8F7232C1A3B100042F91B /* HerosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosView.swift; sourceTree = "<group>"; };
 		42E8F7252C1A3B250042F91B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		42E8F7272C1A3B3D0042F91B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		42E8F7292C1A3B4C0042F91B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		42E8F72B2C1A3B5A0042F91B /* SubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViews.swift; sourceTree = "<group>"; };
-		42E8F72D2C1A3B790042F91B /* HerosVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosVIewModel.swift; sourceTree = "<group>"; };
-		42E8F72F2C1A3B840042F91B /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		42E8F7312C1A3BC00042F91B /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
-		42E8F7332C1A3C970042F91B /* SeriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesRepository.swift; sourceTree = "<group>"; };
 		42E8F7352C1A3CC50042F91B /* HerosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosRepository.swift; sourceTree = "<group>"; };
-		42E8F7372C1A3CF30042F91B /* SeriesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesRepositoryProtocol.swift; sourceTree = "<group>"; };
 		42E8F7392C1A3D0A0042F91B /* HerosRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosRepositoryProtocol.swift; sourceTree = "<group>"; };
-		42E8F73B2C1A3D310042F91B /* SeriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesUseCase.swift; sourceTree = "<group>"; };
 		42E8F73D2C1A3D4A0042F91B /* HerosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42E8F6F12C1A39290042F91B /* RealityKitContent in Frameworks */,
-				42E8F7172C1A3A240042F91B /* MarvelAppLibrary in Frameworks */,
+				42211FC62C1B66BF003DE79D /* MarvelAppLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +98,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42211FCD2C1B7F62003DE79D /* SeriesView */ = {
+			isa = PBXGroup;
+			children = (
+				42211FCB2C1B7E41003DE79D /* SeriesRowView.swift */,
+				42211FC92C1B7E31003DE79D /* SeriesListView.swift */,
+				4227B7862C1D5BF9001CDB17 /* SeriesViewModel.swift */,
+			);
+			path = SeriesView;
+			sourceTree = "<group>";
+		};
+		42211FCE2C1B7F74003DE79D /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				42E8F7252C1A3B250042F91B /* DetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		425C1C2E2C1D9DC000E9CDBC /* HerosListView */ = {
+			isa = PBXGroup;
+			children = (
+				42211FC72C1B6BDE003DE79D /* HerosRowView.swift */,
+				425C1C2C2C1D95B100E9CDBC /* HerosListView.swift */,
+				42211FBF2C1B6286003DE79D /* HerosVIewModel.swift */,
+			);
+			path = HerosListView;
+			sourceTree = "<group>";
+		};
 		42E8F6E22C1A39280042F91B = {
 			isa = PBXGroup;
 			children = (
@@ -188,8 +228,8 @@
 		42E8F7182C1A3A6E0042F91B /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				42E8F7332C1A3C970042F91B /* SeriesRepository.swift */,
 				42E8F7352C1A3CC50042F91B /* HerosRepository.swift */,
+				4227B78C2C1D5C76001CDB17 /* SeriesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -197,8 +237,9 @@
 		42E8F7192C1A3A990042F91B /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				42E8F7372C1A3CF30042F91B /* SeriesRepositoryProtocol.swift */,
 				42E8F7392C1A3D0A0042F91B /* HerosRepositoryProtocol.swift */,
+				4227B78A2C1D5C6D001CDB17 /* SeriesRepositoryProtocol.swift */,
+				42211FD62C1CC14F003DE79D /* ViewModelProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -206,7 +247,7 @@
 		42E8F71A2C1A3AA20042F91B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				42E8F73B2C1A3D310042F91B /* SeriesUseCase.swift */,
+				4227B7882C1D5C5B001CDB17 /* SeriesUseCase.swift */,
 				42E8F73D2C1A3D4A0042F91B /* HerosUseCase.swift */,
 			);
 			path = UseCases;
@@ -223,9 +264,9 @@
 		42E8F71C2C1A3ABA0042F91B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4227B7842C1CCE4B001CDB17 /* MainView.swift */,
 				42E8F7202C1A3ADF0042F91B /* Root */,
 				42E8F71E2C1A3AD00042F91B /* Heros */,
-				42E8F71F2C1A3AD60042F91B /* Detail */,
 				42E8F71D2C1A3AC40042F91B /* Tools */,
 			);
 			path = Views;
@@ -244,25 +285,18 @@
 		42E8F71E2C1A3AD00042F91B /* Heros */ = {
 			isa = PBXGroup;
 			children = (
-				42E8F7232C1A3B100042F91B /* HerosListView.swift */,
-				42E8F72D2C1A3B790042F91B /* HerosVIewModel.swift */,
+				42E8F7232C1A3B100042F91B /* HerosView.swift */,
+				425C1C2E2C1D9DC000E9CDBC /* HerosListView */,
+				42211FCE2C1B7F74003DE79D /* DetailView */,
+				42211FCD2C1B7F62003DE79D /* SeriesView */,
 			);
 			path = Heros;
-			sourceTree = "<group>";
-		};
-		42E8F71F2C1A3AD60042F91B /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				42E8F7252C1A3B250042F91B /* DetailView.swift */,
-				42E8F72F2C1A3B840042F91B /* DetailViewModel.swift */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		42E8F7202C1A3ADF0042F91B /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				42E8F7212C1A3AFE0042F91B /* RootView.swift */,
+				42211FD22C1CBF4C003DE79D /* RootView.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -285,7 +319,7 @@
 			name = Practica_VisionPRO;
 			packageProductDependencies = (
 				42E8F6F02C1A39290042F91B /* RealityKitContent */,
-				42E8F7162C1A3A240042F91B /* MarvelAppLibrary */,
+				42211FC52C1B66BF003DE79D /* MarvelAppLibrary */,
 			);
 			productName = Practica_VisionPRO;
 			productReference = 42E8F6EB2C1A39280042F91B /* Practica_VisionPRO.app */;
@@ -338,7 +372,7 @@
 			);
 			mainGroup = 42E8F6E22C1A39280042F91B;
 			packageReferences = (
-				42E8F7142C1A3A190042F91B /* XCRemoteSwiftPackageReference "MarvelAppLibrary" */,
+				42211FC42C1B66B5003DE79D /* XCLocalSwiftPackageReference "../MarvelAppLibrary" */,
 			);
 			productRefGroup = 42E8F6EC2C1A39280042F91B /* Products */;
 			projectDirPath = "";
@@ -374,19 +408,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42E8F7342C1A3C970042F91B /* SeriesRepository.swift in Sources */,
+				425C1C2D2C1D95B100E9CDBC /* HerosListView.swift in Sources */,
+				4227B78D2C1D5C76001CDB17 /* SeriesRepository.swift in Sources */,
+				4227B7852C1CCE4B001CDB17 /* MainView.swift in Sources */,
+				4227B78B2C1D5C6D001CDB17 /* SeriesRepositoryProtocol.swift in Sources */,
 				42E8F7282C1A3B3D0042F91B /* ErrorView.swift in Sources */,
 				42E8F7322C1A3BC10042F91B /* Status.swift in Sources */,
-				42E8F7242C1A3B100042F91B /* HerosListView.swift in Sources */,
+				42211FC82C1B6BDE003DE79D /* HerosRowView.swift in Sources */,
+				42E8F7242C1A3B100042F91B /* HerosView.swift in Sources */,
+				42211FD32C1CBF4C003DE79D /* RootView.swift in Sources */,
 				42E8F7262C1A3B250042F91B /* DetailView.swift in Sources */,
+				42211FCC2C1B7E41003DE79D /* SeriesRowView.swift in Sources */,
+				4227B7872C1D5BF9001CDB17 /* SeriesViewModel.swift in Sources */,
+				4227B7892C1D5C5B001CDB17 /* SeriesUseCase.swift in Sources */,
 				42E8F7362C1A3CC50042F91B /* HerosRepository.swift in Sources */,
-				42E8F7222C1A3AFE0042F91B /* RootView.swift in Sources */,
 				42E8F73E2C1A3D4A0042F91B /* HerosUseCase.swift in Sources */,
-				42E8F7302C1A3B840042F91B /* DetailViewModel.swift in Sources */,
-				42E8F72E2C1A3B790042F91B /* HerosVIewModel.swift in Sources */,
 				42E8F6F32C1A39290042F91B /* Practica_VisionPROApp.swift in Sources */,
-				42E8F73C2C1A3D310042F91B /* SeriesUseCase.swift in Sources */,
-				42E8F7382C1A3CF30042F91B /* SeriesRepositoryProtocol.swift in Sources */,
+				42211FCA2C1B7E31003DE79D /* SeriesListView.swift in Sources */,
+				42211FC02C1B6286003DE79D /* HerosVIewModel.swift in Sources */,
+				42211FD72C1CC14F003DE79D /* ViewModelProtocol.swift in Sources */,
 				42E8F72A2C1A3B4C0042F91B /* LoadingView.swift in Sources */,
 				42E8F72C2C1A3B5A0042F91B /* SubViews.swift in Sources */,
 				42E8F73A2C1A3D0A0042F91B /* HerosRepositoryProtocol.swift in Sources */,
@@ -657,26 +697,22 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		42E8F7142C1A3A190042F91B /* XCRemoteSwiftPackageReference "MarvelAppLibrary" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:Boncroix/MarvelAppLibrary.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		42211FC42C1B66B5003DE79D /* XCLocalSwiftPackageReference "../MarvelAppLibrary" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../MarvelAppLibrary;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		42211FC52C1B66BF003DE79D /* MarvelAppLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42211FC42C1B66B5003DE79D /* XCLocalSwiftPackageReference "../MarvelAppLibrary" */;
+			productName = MarvelAppLibrary;
+		};
 		42E8F6F02C1A39290042F91B /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
-		};
-		42E8F7162C1A3A240042F91B /* MarvelAppLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 42E8F7142C1A3A190042F91B /* XCRemoteSwiftPackageReference "MarvelAppLibrary" */;
-			productName = MarvelAppLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

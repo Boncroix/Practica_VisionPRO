@@ -9,8 +9,8 @@ import Foundation
 
 // MARK: - Enum AppState
 enum Status {
-    case none,
-         home,
-         loadingView,
-         errorView(error: String)
+    case none, 
+         loading,
+         loaded,
+         error(error:String)
 }

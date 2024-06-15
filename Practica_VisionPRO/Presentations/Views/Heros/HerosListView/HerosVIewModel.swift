@@ -9,35 +9,34 @@ import Foundation
 import MarvelAppLibrary
 
 // MARK: - HerosViewModel
-final class HerosViewModel: ObservableObject {
+@Observable
+final class HerosViewModel: ViewModelProtocol {
     
     // MARK: Properties
     private let useCaseHeros: HerosUseCaseProtocol
-    
-    @Published var herosModel: HerosEntry = herosEntryFake
-    @Published var heros: [Hero] = []
-    @Published var status = Status.none
+    var status = Status.none
+    var herosModel: HerosEntry = herosEntryFake
+    var heros: [Hero] = []
     
     // MARK: Init
     init(useCaseHeros: HerosUseCaseProtocol = HerosUseCase()) {
         self.useCaseHeros = useCaseHeros
+        getHeros()
     }
     
     // MARK: Public Functions
-    @MainActor
     func getHeros() {
-        self.status = .loadingView
-        
+        self.status = .loading
         DispatchQueue.main.async {
             Task {
                 do {
                     let (herosEntryData, herosData) = try await self.useCaseHeros.getHeros()
                     self.herosModel = herosEntryData
                     self.heros = herosData
-                    self.status = .home
+                    self.status = .loaded
                 } catch {
                     let errorMessage = errorMessage(for: error)
-                    self.status = .errorView(error: errorMessage)
+                    self.status = .error(error: errorMessage)
                     NSLog(errorMessage)
                 }
             }

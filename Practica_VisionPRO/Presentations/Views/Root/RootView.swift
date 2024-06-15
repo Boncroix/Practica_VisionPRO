@@ -2,40 +2,38 @@
 //  RootView.swift
 //  Practica_VisionPRO
 //
-//  Created by Jose Bueno Cruz on 12/6/24.
+//  Created by Jose Bueno Cruz on 14/6/24.
 //
 
 import SwiftUI
 
 // MARK: - RootView
-struct RootView: View {
+struct RootView<T: ViewModelProtocol, ContentView: View>: View {
     
     // MARK: Properties
-    @StateObject var viewModel: HerosViewModel
-        
+    let viewModel: T
+    let viewDestination: ContentView
+    
     // MARK: View
     var body: some View {
-        switch viewModel.status {
-        case .none:
-            Text("Status none")
-                .onAppear {
-                    viewModel.getHeros()
+        ZStack{
+            VStack{
+                switch (viewModel.status){
+                case .none:
+                    Text("None")
+                case .error(error: let errorString):
+                    ErrorView(error: errorString)
+                case .loaded:
+                    viewDestination
+                case .loading:
+                    LoadingView()
                 }
-        case .loadingView:
-            LoadingView()
-        case .home:
-            HerosListView(viewModel: viewModel)
-        case .errorView(error: let errorString):
-            ErrorView(error: errorString) {
-                viewModel.status = .none
             }
         }
     }
 }
 
-
-// MARK: - Preview
+// MARK: - Preview Rootview
 #Preview {
-    RootView(viewModel: HerosViewModel())
+    RootView(viewModel: HerosViewModel(), viewDestination: HerosView())
 }
-

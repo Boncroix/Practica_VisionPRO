@@ -11,4 +11,5 @@ import MarvelAppLibrary
 // MARK: - HerosRepositoryProtocol
 protocol HerosRepositoryProtocol {
     func getHeros() async throws -> (HerosEntry, [Hero])
+    func getSeries(hero: Hero) async throws -> (SeriesEntry, [Serie])
 }

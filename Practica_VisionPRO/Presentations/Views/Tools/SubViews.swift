@@ -6,13 +6,25 @@
 //
 
 import SwiftUI
+import MarvelAppLibrary
 
-struct SubViews: View {
+
+// MARK: PlaceHolderImage
+struct PlaceHolderImage: View {
+    
+    // MARK: Propreties
+    @Environment(\.colorScheme) var colorScheme
+    
+    // MARK: View
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(systemName: "photo")
+            .resizable()
+            .foregroundColor(Color.black)
+            .cornerRadius(50)
     }
 }
 
+// MARK: - Preview
 #Preview {
-    SubViews()
+    PlaceHolderImage()
 }

@@ -8,15 +8,6 @@
         "revision" : "d108a1fa6189e661f91560548ef48651ed8d93b9",
         "version" : "20.0.0"
       }
-    },
-    {
-      "identity" : "marvelapplibrary",
-      "kind" : "remoteSourceControl",
-      "location" : "git@github.com:Boncroix/MarvelAppLibrary.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "39692cd711338ca80d1ca67b2e9d18df476fc26d"
-      }
     }
   ],
   "version" : 2
