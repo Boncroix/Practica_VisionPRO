@@ -8,7 +8,7 @@
 import Foundation
 import MarvelAppLibrary
 
-// MARK: - DetailViewModel
+// MARK: - SeriesViewModel
 @Observable
 final class SeriesViewModel: ViewModelProtocol {
     
@@ -27,7 +27,7 @@ final class SeriesViewModel: ViewModelProtocol {
         getSeries(hero: hero)
     }
     
-    // MARK: Public Functions
+    // MARK: Functions
     func getSeries(hero: Hero) {
         self.status = .loading
         DispatchQueue.main.async {

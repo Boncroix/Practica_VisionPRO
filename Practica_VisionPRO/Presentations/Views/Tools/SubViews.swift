@@ -8,8 +8,7 @@
 import SwiftUI
 import MarvelAppLibrary
 
-
-// MARK: PlaceHolderImage
+// MARK: - PlaceHolderImage
 struct PlaceHolderImage: View {
     
     // MARK: Propreties
@@ -21,6 +20,19 @@ struct PlaceHolderImage: View {
             .resizable()
             .foregroundColor(Color.black)
             .cornerRadius(50)
+    }
+}
+
+// MARK: - ScreenSizeReader
+struct ScreenSizeReader<Content: View>: View {
+    var content: (CGSize) -> Content
+
+    var body: some View {
+        GeometryReader { geometry in
+            let size = geometry.size
+            content(size)
+                .frame(width: size.width, height: size.height)
+        }
     }
 }
 

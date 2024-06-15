@@ -12,12 +12,12 @@ import MarvelAppLibrary
 struct SeriesListView: View {
     
     // MARK: Properties
-    var viewModel: SeriesViewModel
+    let viewModel: SeriesViewModel
     
+    // MARK: Init
     init(viewModel: SeriesViewModel) {
         self.viewModel = viewModel
     }
-    
     
     // MARK: View
     var body: some View {
@@ -31,9 +31,7 @@ struct SeriesListView: View {
     }
 }
 
-/*
  // MARK: - SeriesPreview
  #Preview {
-     SeriesView(viewModel: SeriesViewModel(hero: character1))
+     SeriesListView(viewModel: SeriesViewModel(useCaseSeries: SeriesUseCaseFake(), hero: character1))
  }
- */

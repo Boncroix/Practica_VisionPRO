@@ -14,6 +14,7 @@ struct Practica_VisionPROApp: App {
     // MARK: View
     var body: some Scene {
         
+        // MARK: Windows
         WindowGroup {
             MainView()
                 .frame(minWidth: 1000, maxWidth: 2000, minHeight: 800, maxHeight: 1600)

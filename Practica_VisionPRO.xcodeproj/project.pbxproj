@@ -247,8 +247,8 @@
 		42E8F71A2C1A3AA20042F91B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				4227B7882C1D5C5B001CDB17 /* SeriesUseCase.swift */,
 				42E8F73D2C1A3D4A0042F91B /* HerosUseCase.swift */,
+				4227B7882C1D5C5B001CDB17 /* SeriesUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";

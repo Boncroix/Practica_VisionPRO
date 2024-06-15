@@ -35,5 +35,5 @@ struct RootView<T: ViewModelProtocol, ContentView: View>: View {
 
 // MARK: - Preview Rootview
 #Preview {
-    RootView(viewModel: HerosViewModel(), viewDestination: HerosView())
+    RootView(viewModel: HerosViewModel(useCaseHeros: HerosUseCaseFake()), viewDestination: HerosView())
 }

@@ -8,11 +8,14 @@
 import SwiftUI
 import MarvelAppLibrary
 
+// MARK: - HerosListView
 struct HerosListView: View {
     
-    @State var viewModel = HerosViewModel()
+    // MARK: Properties
+    @State var viewModel: HerosViewModel
     @Binding var selectedHero: Hero?
     
+    // MARK: View
     var body: some View {
         List(selection: $selectedHero) {
             ForEach(viewModel.heros) { data in
@@ -24,4 +27,18 @@ struct HerosListView: View {
         }
         .navigationTitle("Heroes")
     }
+}
+
+// MARK: - Preview HerosListView
+#Preview {
+    struct PreviewWrapper: View {
+        @State private var selectedHero: Hero? = nil
+        @State private var viewModel = HerosViewModel(useCaseHeros: HerosUseCaseFake())
+        
+        var body: some View {
+            HerosListView(viewModel: viewModel, selectedHero: $selectedHero)
+        }
+    }
+    
+    return PreviewWrapper()
 }

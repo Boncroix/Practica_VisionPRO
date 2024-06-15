@@ -51,7 +51,7 @@ struct SeriesRowView: View {
     }
 }
 
-// MARK: - Preview
+// MARK: - Preview SeriesRowView
 #Preview {
     SeriesRowView(serie: serie1)
 }

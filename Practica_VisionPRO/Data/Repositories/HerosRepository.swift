@@ -23,11 +23,6 @@ final class HerosRepository: HerosRepositoryProtocol {
     func getHeros() async throws -> (HerosEntry, [Hero]) {
         try await network.getHeros()
     }
-    
-    // MARK: Functions
-    func getSeries(hero: Hero) async throws -> (SeriesEntry, [Serie]) {
-        try await network.getSeries(hero: hero)
-    }
 }
 
 // MARK: - HerosRepositoryFake
@@ -44,10 +39,5 @@ final class HerosRepositoryFake: HerosRepositoryProtocol {
     // MARK: Functions
     func getHeros() async throws -> (HerosEntry, [Hero]) {
         try await network.getHeros()
-    }
-    
-    // MARK: Functions
-    func getSeries(hero: Hero) async throws -> (SeriesEntry, [Serie]) {
-        try await network.getSeries(hero: hero)
     }
 }

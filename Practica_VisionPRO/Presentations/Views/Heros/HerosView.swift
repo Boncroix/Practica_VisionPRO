@@ -24,7 +24,9 @@ struct HerosView: View {
     var body: some View {
         NavigationSplitView {
         
-            RootView(viewModel: viewModel, viewDestination: HerosListView(selectedHero: $selectedHero))
+            RootView(viewModel: viewModel, 
+                     viewDestination: HerosListView(viewModel: viewModel,
+                                                    selectedHero: $selectedHero))
                 .padding(16)
             
         } content: {

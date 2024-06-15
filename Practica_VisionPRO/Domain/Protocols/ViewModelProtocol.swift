@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - ViewModel Protocol
 protocol ViewModelProtocol {
     var status: Status {get}
 }

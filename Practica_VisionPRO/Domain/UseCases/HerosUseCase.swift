@@ -12,7 +12,6 @@ import MarvelAppLibrary
 protocol HerosUseCaseProtocol {
     var repository: HerosRepositoryProtocol {get set}
     func getHeros() async throws -> (HerosEntry, [Hero])
-    func getSeries(hero: Hero) async throws -> (SeriesEntry, [Serie])
 }
 
 // MARK: - HerosUseCase
@@ -30,11 +29,6 @@ final class HerosUseCase: HerosUseCaseProtocol {
     func getHeros() async throws -> (HerosEntry, [Hero]) {
         return try await repository.getHeros()
     }
-    
-    // MARK: GetSeries
-    func getSeries(hero: Hero) async throws -> (SeriesEntry, [Serie]) {
-        return try await repository.getSeries(hero: hero)
-    }
 }
 
 // MARK: - HerosUseCaseFake
@@ -51,10 +45,5 @@ final class HerosUseCaseFake: HerosUseCaseProtocol {
     // MARK: GetHeros
     func getHeros() async throws -> (HerosEntry, [Hero]) {
         return try await repository.getHeros()
-    }
-    
-    // MARK: GetSeries
-    func getSeries(hero: Hero) async throws -> (SeriesEntry, [Serie]) {
-        return try await repository.getSeries(hero: hero)
     }
 }

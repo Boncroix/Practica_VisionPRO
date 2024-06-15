@@ -24,7 +24,7 @@ final class HerosViewModel: ViewModelProtocol {
         getHeros()
     }
     
-    // MARK: Public Functions
+    // MARK: Functions
     func getHeros() {
         self.status = .loading
         DispatchQueue.main.async {
