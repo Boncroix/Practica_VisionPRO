@@ -21,18 +21,19 @@ struct SeriesListView: View {
     
     // MARK: View
     var body: some View {
-        ScreenSizeReader { screenSize in
-            ScrollView {
-                ForEach(viewModel.series) { serie in
-                    SeriesRowView(serie: serie)
-                        .frame(width: screenSize.width - 16, height: screenSize.height / 2)
-                        
-                }
-                .navigationTitle("Series")
-                .id(1)
+        
+        ScrollView {
+            ForEach(viewModel.series) { serie in
+                SeriesRowView(serie: serie)
+                    .frame(height: 350)
+                    .frame(maxWidth: 1050)
+                    .padding(16)
             }
-            .id(0)
+            .navigationTitle("Series")
+            .id(1)
         }
+        .id(0)
+        
     }
 }
 

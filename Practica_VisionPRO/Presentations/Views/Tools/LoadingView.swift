@@ -25,32 +25,32 @@ struct LoadingView: View {
     
     // MARK: SubViews
     private var loadingSubView: some View {
-        ScreenSizeReader { screenSize in
-            VStack(spacing: 0) {
-                Image("LKC")
-                    .resizable()
-                    .frame(width: screenSize.width / 4, height: screenSize.width / 4)
-                    .rotationEffect(.degrees(rotationAngle))
-                    .onAppear {
-                        startTimer()
-                    }
-                    .onDisappear {
-                        stopTimer()
-                    }
-                    .animation(.easeInOut(duration: 0.2), value: rotationAngle)
-                    .id(0)
+        
+        VStack(spacing: 0) {
+            Image("LKC")
+                .resizable()
+                .frame(width: 150, height: 150)
+                .rotationEffect(.degrees(rotationAngle))
+                .onAppear {
+                    startTimer()
+                }
+                .onDisappear {
+                    stopTimer()
+                }
+                .animation(.easeInOut(duration: 0.2), value: rotationAngle)
+                .id(0)
 
-                Text(NSLocalizedString("Loading...", comment: ""))
-                    .font(AppFonts().textL)
-                    .opacity(textOpacity)
-                    .onAppear {
-                        withAnimation(Animation.linear(duration: 1)
-                            .repeatForever(autoreverses: true)) {
-                            self.textOpacity = 0.0
-                            }
-                    }
-                    .id(1)
-            }
+            Text(NSLocalizedString("Loading...", comment: ""))
+                .font(AppFonts().textL)
+                .opacity(textOpacity)
+                .onAppear {
+                    withAnimation(Animation.linear(duration: 1)
+                        .repeatForever(autoreverses: true)) {
+                        self.textOpacity = 0.0
+                        }
+                }
+                .id(1)
+            
         }
     }
     

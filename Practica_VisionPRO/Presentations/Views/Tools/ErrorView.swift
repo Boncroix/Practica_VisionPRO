@@ -25,51 +25,51 @@ struct ErrorView: View {
     
     // MARK: SubView
     private var errorContent: some View {
-        ScreenSizeReader { screenSize in
-            ZStack {
-                Image(.marvelCrash)
-                    .resizable()
-                    .id(0)
+        
+        ZStack {
+            Image(.marvelCrash)
+                .resizable()
+                .id(0)
+            
+            LinearGradient(
+                colors: [.black, .clear],
+                startPoint: .bottom,
+                endPoint: .top
+                )
+            .id(1)
+            
+            VStack {
                 
-                LinearGradient(
-                    colors: [.black, .clear],
-                    startPoint: .bottom,
-                    endPoint: .top
-                    )
-                .id(1)
+                Spacer()
                 
-                VStack {
+                Text("\(error)")
+                    .id(2)
                     
-                    Spacer()
+                Divider()
+                    .frame(height: 3)
+                    .overlay(.red)
+                    .id(3)
                     
-                    Text("\(error)")
-                        .id(2)
-                        
-                    Divider()
-                        .frame(height: 3)
-                        .overlay(.red)
-                        .id(3)
-                        
-                    Button(NSLocalizedString("Close", comment: "")) {
-                        closure?()
-                    }
-                    .padding(8)
-                    .background(AppColors().KCorange)
-                    .cornerRadius(50)
-                    .opacity(0.9)
-                    .id(4)
-                    
+                Button(NSLocalizedString("Close", comment: "")) {
+                    closure?()
                 }
-                .padding()
-                .font(AppFonts().textM)
-                .foregroundColor(.red)
-                .bold()
+                .padding(8)
+                .background(AppColors().KCorange)
+                .cornerRadius(50)
+                .opacity(0.9)
+                .id(4)
                 
             }
-            .frame(width: screenSize.width - 16, height: screenSize.height / 3)
-            .cornerRadius(50)
-            .shadow(radius: 10)
+            .padding()
+            .font(AppFonts().textM)
+            .foregroundColor(.red)
+            .bold()
+            
         }
+        .frame(maxWidth: .infinity, maxHeight: 250)
+        .cornerRadius(50)
+        .shadow(radius: 10)
+
     }
 }
 
