@@ -33,14 +33,14 @@ struct HerosView: View {
 
             DetailView(selectedhero: selectedHero)
                 .padding(16)
-            
+
         } detail: {
-            
             if let hero = selectedHero {
                 let vm = SeriesViewModel(hero: hero)
                 RootView(viewModel: vm,
                          viewDestination: SeriesListView(viewModel: vm))
                 .padding(16)
+                
             }
         }
     }

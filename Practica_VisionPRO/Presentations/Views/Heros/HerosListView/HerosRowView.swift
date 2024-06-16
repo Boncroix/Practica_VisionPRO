@@ -45,7 +45,6 @@ struct HerosRowView: View {
                     .foregroundStyle(Color.white)
             }
         }
-        .frame(height: 200)
         .cornerRadius(50)
         .shadow(radius: 10)
     }}

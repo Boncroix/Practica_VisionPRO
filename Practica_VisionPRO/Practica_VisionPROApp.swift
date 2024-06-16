@@ -17,7 +17,7 @@ struct Practica_VisionPROApp: App {
         // MARK: Windows
         WindowGroup {
             MainView()
-                .frame(minWidth: 1000, maxWidth: 2000, minHeight: 800, maxHeight: 1600)
+                .frame(minWidth: 1000, maxWidth: .infinity, minHeight: 800, maxHeight: .infinity)
         }
         .windowStyle(.plain)
         .windowResizability(.contentMinSize)

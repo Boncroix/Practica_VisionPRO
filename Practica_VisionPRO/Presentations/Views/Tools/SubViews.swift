@@ -11,15 +11,11 @@ import MarvelAppLibrary
 // MARK: - PlaceHolderImage
 struct PlaceHolderImage: View {
     
-    // MARK: Propreties
-    @Environment(\.colorScheme) var colorScheme
-    
     // MARK: View
     var body: some View {
         Image(systemName: "photo")
             .resizable()
             .foregroundColor(Color.black)
-            .cornerRadius(50)
     }
 }
 

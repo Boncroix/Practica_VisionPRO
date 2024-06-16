@@ -11,7 +11,7 @@ import MarvelAppLibrary
 // MARK: - SeriesViewModel
 @Observable
 final class SeriesViewModel: ViewModelProtocol {
-    
+
     // MARK: Properties
     private let useCase: SeriesUseCaseProtocol
     var status = Status.none
@@ -28,6 +28,11 @@ final class SeriesViewModel: ViewModelProtocol {
     }
     
     // MARK: Functions
+    
+    func resetStatus() {
+        getSeries(hero: hero)
+    }
+    
     func getSeries(hero: Hero) {
         self.status = .loading
         DispatchQueue.main.async {

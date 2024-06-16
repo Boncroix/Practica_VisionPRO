@@ -20,6 +20,7 @@
 		4227B78B2C1D5C6D001CDB17 /* SeriesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227B78A2C1D5C6D001CDB17 /* SeriesRepositoryProtocol.swift */; };
 		4227B78D2C1D5C76001CDB17 /* SeriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227B78C2C1D5C76001CDB17 /* SeriesRepository.swift */; };
 		425C1C2D2C1D95B100E9CDBC /* HerosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C1C2C2C1D95B100E9CDBC /* HerosListView.swift */; };
+		42B5E06E2C1E2611007ECB07 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B5E06D2C1E2611007ECB07 /* SettingsView.swift */; };
 		42E8F6F12C1A39290042F91B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 42E8F6F02C1A39290042F91B /* RealityKitContent */; };
 		42E8F6F32C1A39290042F91B /* Practica_VisionPROApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8F6F22C1A39290042F91B /* Practica_VisionPROApp.swift */; };
 		42E8F6F92C1A392B0042F91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E8F6F82C1A392B0042F91B /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		4227B78A2C1D5C6D001CDB17 /* SeriesRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesRepositoryProtocol.swift; sourceTree = "<group>"; };
 		4227B78C2C1D5C76001CDB17 /* SeriesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesRepository.swift; sourceTree = "<group>"; };
 		425C1C2C2C1D95B100E9CDBC /* HerosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListView.swift; sourceTree = "<group>"; };
+		42B5E06D2C1E2611007ECB07 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		42E8F6EB2C1A39280042F91B /* Practica_VisionPRO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practica_VisionPRO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E8F6EF2C1A39290042F91B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		42E8F6F22C1A39290042F91B /* Practica_VisionPROApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica_VisionPROApp.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 				42211FBF2C1B6286003DE79D /* HerosVIewModel.swift */,
 			);
 			path = HerosListView;
+			sourceTree = "<group>";
+		};
+		42B5E06C2C1E25F8007ECB07 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				42B5E06D2C1E2611007ECB07 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		42E8F6E22C1A39280042F91B = {
@@ -267,6 +277,7 @@
 				4227B7842C1CCE4B001CDB17 /* MainView.swift */,
 				42E8F7202C1A3ADF0042F91B /* Root */,
 				42E8F71E2C1A3AD00042F91B /* Heros */,
+				42B5E06C2C1E25F8007ECB07 /* Settings */,
 				42E8F71D2C1A3AC40042F91B /* Tools */,
 			);
 			path = Views;
@@ -409,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				425C1C2D2C1D95B100E9CDBC /* HerosListView.swift in Sources */,
+				42B5E06E2C1E2611007ECB07 /* SettingsView.swift in Sources */,
 				4227B78D2C1D5C76001CDB17 /* SeriesRepository.swift in Sources */,
 				4227B7852C1CCE4B001CDB17 /* MainView.swift in Sources */,
 				4227B78B2C1D5C6D001CDB17 /* SeriesRepositoryProtocol.swift in Sources */,

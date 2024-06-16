@@ -17,28 +17,30 @@ struct DetailView: View {
     // MARK: View
     var body: some View {
         if let hero = selectedhero {
-            NavigationStack {
-                VStack(spacing: 16) {
-                    if let urlString = hero.thumbnail.getUrlImage(), let url = URL(string: urlString) {
-                        AsyncImage(url: url) { image in
-                            image
-                                .resizable()
-                                .cornerRadius(50)
-                                .frame(minHeight: 400)
-                        } placeholder: {
+            ScreenSizeReader { screenSize in
+                NavigationStack {
+                    VStack(spacing: 16) {
+                        if let urlString = hero.thumbnail.getUrlImage(), let url = URL(string: urlString) {
+                            AsyncImage(url: url) { image in
+                                image
+                                    .resizable()
+                                    .cornerRadius(50)
+                                    .frame(width: screenSize.width - 16, height: screenSize.height / 2)
+                            } placeholder: {
+                                PlaceHolderImage()
+                            }
+                        } else {
                             PlaceHolderImage()
                         }
-                    } else {
-                        PlaceHolderImage()
-                    }
-                    
-                    ScrollView {
-                        Text(hero.description)
+                        
+                        ScrollView {
+                            Text(hero.description)
+                        }
                     }
                 }
+                .navigationTitle(hero.name)
+                .cornerRadius(50)
             }
-            .navigationTitle(hero.name)
-            .cornerRadius(50)
         } else {
             ContentUnavailableView("Selectiona un heroe",
                                    systemImage: "person.fill")

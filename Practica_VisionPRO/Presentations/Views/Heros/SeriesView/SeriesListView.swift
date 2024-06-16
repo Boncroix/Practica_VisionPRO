@@ -21,12 +21,14 @@ struct SeriesListView: View {
     
     // MARK: View
     var body: some View {
-
-        ScrollView {
-            ForEach(viewModel.series) { serie in
-                SeriesRowView(serie: serie)
+        ScreenSizeReader { screenSize in
+            ScrollView {
+                ForEach(viewModel.series) { serie in
+                    SeriesRowView(serie: serie)
+                        .frame(width: screenSize.width - 16, height: screenSize.height / 2)
+                }
+                .navigationTitle("Series")
             }
-            .navigationTitle("Series")
         }
     }
 }

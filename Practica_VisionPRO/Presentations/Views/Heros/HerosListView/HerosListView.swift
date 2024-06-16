@@ -17,15 +17,18 @@ struct HerosListView: View {
     
     // MARK: View
     var body: some View {
-        List(selection: $selectedHero) {
-            ForEach(viewModel.heros) { data in
-                NavigationLink(value: data) {
-                    HerosRowView(hero: data)
+        ScreenSizeReader { screenSize in
+            List(selection: $selectedHero) {
+                ForEach(viewModel.heros) { data in
+                    NavigationLink(value: data) {
+                        HerosRowView(hero: data)
+                            .frame(width: screenSize.width - 16, height: screenSize.height / 3)
+                    }
+                    .tag(data)
                 }
-                .tag(data)
             }
+            .navigationTitle("Heroes")
         }
-        .navigationTitle("Heroes")
     }
 }
 

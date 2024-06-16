@@ -11,7 +11,8 @@ import SwiftUI
 struct RootView<T: ViewModelProtocol, ContentView: View>: View {
     
     // MARK: Properties
-    let viewModel: T
+    @Environment(\.openWindow) private var openWindow
+    var viewModel: T
     let viewDestination: ContentView
     
     // MARK: View
@@ -22,7 +23,9 @@ struct RootView<T: ViewModelProtocol, ContentView: View>: View {
                 case .none:
                     Text("None")
                 case .error(error: let errorString):
-                    ErrorView(error: errorString)
+                    ErrorView(error: errorString) {
+                        viewModel.resetStatus()
+                    }
                 case .loaded:
                     viewDestination
                 case .loading:

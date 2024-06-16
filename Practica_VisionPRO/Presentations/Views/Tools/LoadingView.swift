@@ -29,8 +29,7 @@ struct LoadingView: View {
             VStack(spacing: 0) {
                 Image("LKC")
                     .resizable()
-                    .frame(width: screenSize.width / 4,
-                           height: screenSize.width / 4)
+                    .frame(width: screenSize.width / 4, height: screenSize.width / 4)
                     .rotationEffect(.degrees(rotationAngle))
                     .onAppear {
                         startTimer()
@@ -51,7 +50,6 @@ struct LoadingView: View {
                     }
             }
         }
-
     }
     
     // MARK: Private Funtions

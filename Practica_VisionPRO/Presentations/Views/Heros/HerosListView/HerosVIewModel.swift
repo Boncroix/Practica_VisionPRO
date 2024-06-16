@@ -25,6 +25,10 @@ final class HerosViewModel: ViewModelProtocol {
     }
     
     // MARK: Functions
+    func resetStatus() {
+        getHeros()
+    }
+    
     func getHeros() {
         self.status = .loading
         DispatchQueue.main.async {

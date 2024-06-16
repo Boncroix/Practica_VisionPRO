@@ -16,6 +16,7 @@ struct SeriesRowView: View {
     
     // MARK: View
     var body: some View {
+        
         ZStack {
             if let urlString = serie.thumbnail.getUrlImage(), let url = URL(string: urlString) {
                 AsyncImage(url: url) { image in
@@ -39,14 +40,13 @@ struct SeriesRowView: View {
                 Spacer()
                 
                 Text(serie.title)
-                    .font(AppFonts().textXS)
+                    .font(AppFonts().textXL)
                     .bold()
                     .padding()
                     .foregroundStyle(Color.white)
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: 400)
-        .cornerRadius(20)
+        .cornerRadius(50)
         .shadow(radius: 10)
     }
 }

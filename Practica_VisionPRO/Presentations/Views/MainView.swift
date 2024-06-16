@@ -26,19 +26,35 @@ struct MainView: View {
                                 icon: { Image(systemName: "house") })
                     }
                     
-                    Text("Hola")
+                    SettingsView()
                         .tabItem {
                             Label(
-                                title: { Text("Heroes 3D") },
-                                icon: { Image(systemName: "person.fill") })
+                                title: { Text("Settings") },
+                                icon: { Image(systemName: "gearshape") })
                     }
                 }
             }
             
-            // ----------------------
-            // Reality Kit. Sonido
-            // ----------------------
+            RealityView{ content in
+                if let scene = try? await Entity(named: "Heros", in: realityKitContentBundle){
 
+                    guard let SoundEmitter = scene.findEntity(named: "SoundEmitter") else {
+                        NSLog("No encuenta el SoundEmitter")
+                        return
+                    }
+                    
+                    guard let recourceSound = try? await AudioFileResource(named: "/Root/soundMarvel_mp3", from: "Heros.usda", in: realityKitContentBundle) else {
+                        NSLog("No encuenta el sonido")
+                        return
+                    }
+                    
+                    let audio = SoundEmitter.prepareAudio(recourceSound)
+                    audio.play()
+                    
+                    content.add(scene)
+                    
+                }
+            }
         }
     }
 }
