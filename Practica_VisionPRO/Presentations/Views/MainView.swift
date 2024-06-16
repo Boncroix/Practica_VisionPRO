@@ -20,6 +20,7 @@ struct MainView: View {
             VStack{
                 TabView{
                     HerosView()
+                        .id(1)
                         .tabItem {
                             Label(
                                 title: { Text("Heroes") },
@@ -27,12 +28,14 @@ struct MainView: View {
                     }
                     
                     SettingsView()
+                        .id(2)
                         .tabItem {
                             Label(
                                 title: { Text("Settings") },
                                 icon: { Image(systemName: "gearshape") })
                     }
                 }
+                .id(0)
             }
             
             RealityView{ content in
@@ -55,6 +58,7 @@ struct MainView: View {
                     
                 }
             }
+            .id(3)
         }
     }
 }

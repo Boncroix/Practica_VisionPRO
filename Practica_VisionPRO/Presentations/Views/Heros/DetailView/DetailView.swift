@@ -29,12 +29,14 @@ struct DetailView: View {
                             } placeholder: {
                                 PlaceHolderImage()
                             }
+                            .id(0)
                         } else {
                             PlaceHolderImage()
                         }
                         
                         ScrollView {
                             Text(hero.description)
+                                .id(1)
                         }
                     }
                 }

@@ -24,6 +24,7 @@ struct HerosRowView: View {
                 } placeholder: {
                     PlaceHolderImage()
                 }
+                .id(0)
             } else {
                 PlaceHolderImage()
             }
@@ -33,6 +34,7 @@ struct HerosRowView: View {
                 startPoint: .bottom,
                 endPoint: .center
                 )
+            .id(1)
             
             VStack {
                 
@@ -43,6 +45,7 @@ struct HerosRowView: View {
                     .bold()
                     .padding()
                     .foregroundStyle(Color.white)
+                    .id(2)
             }
         }
         .cornerRadius(50)

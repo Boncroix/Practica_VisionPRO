@@ -25,8 +25,10 @@ struct SeriesRowView: View {
                 } placeholder: {
                     PlaceHolderImage()
                 }
+                .id(0)
             } else {
                 PlaceHolderImage()
+                    .id(1)
             }
             
             LinearGradient(
@@ -34,6 +36,7 @@ struct SeriesRowView: View {
                 startPoint: .bottom,
                 endPoint: .center
             )
+            .id(2)
             
             VStack {
                 
@@ -44,6 +47,7 @@ struct SeriesRowView: View {
                     .bold()
                     .padding()
                     .foregroundStyle(Color.white)
+                    .id(3)
             }
         }
         .cornerRadius(50)

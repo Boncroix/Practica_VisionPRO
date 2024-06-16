@@ -8,8 +8,8 @@
 import Foundation
 
 // MARK: - Enum AppState
-enum Status {
-    case none, 
+enum Status: Equatable {
+    case none,
          loading,
          loaded,
          error(error:String)

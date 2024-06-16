@@ -16,7 +16,7 @@ def Xform "Root"
         reorder nameChildren = ["AmbientAudio", "soundMarvel_mp3"]
         def RealityKitComponent "AmbientAudio"
         {
-            float gain = 0
+            float gain = -20.021564
             uniform token info:id = "RealityKit.AmbientAudio"
         }
     }

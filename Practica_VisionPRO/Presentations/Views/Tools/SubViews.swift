@@ -16,6 +16,7 @@ struct PlaceHolderImage: View {
         Image(systemName: "photo")
             .resizable()
             .foregroundColor(Color.black)
+            .id(0)
     }
 }
 
@@ -29,6 +30,7 @@ struct ScreenSizeReader<Content: View>: View {
             content(size)
                 .frame(width: size.width, height: size.height)
         }
+        .id(0)
     }
 }
 

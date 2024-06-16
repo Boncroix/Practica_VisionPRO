@@ -8,6 +8,24 @@
         "revision" : "d108a1fa6189e661f91560548ef48651ed8d93b9",
         "version" : "20.0.0"
       }
+    },
+    {
+      "identity" : "marvelapplibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Boncroix/MarvelAppLibrary.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ddd761700c69e666bbea9abff369dd3b04d8366e"
+      }
+    },
+    {
+      "identity" : "viewinspector",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:nalexn/ViewInspector.git",
+      "state" : {
+        "revision" : "7b1732802ffe30e6a67754bda6c7819e5cb0eb70",
+        "version" : "0.9.11"
+      }
     }
   ],
   "version" : 2

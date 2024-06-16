@@ -23,11 +23,12 @@ struct HerosListView: View {
                     NavigationLink(value: data) {
                         HerosRowView(hero: data)
                             .frame(width: screenSize.width - 16, height: screenSize.height / 3)
-                    }
-                    .tag(data)
+                    }.tag(data)
                 }
+                .id(1)
             }
             .navigationTitle("Heroes")
+            .id(0)
         }
     }
 }
@@ -35,8 +36,8 @@ struct HerosListView: View {
 // MARK: - Preview HerosListView
 #Preview {
     struct PreviewWrapper: View {
-        @State private var selectedHero: Hero? = nil
-        @State private var viewModel = HerosViewModel(useCaseHeros: HerosUseCaseFake())
+        @State var selectedHero: Hero? = nil
+        @State var viewModel = HerosViewModel(useCaseHeros: HerosUseCaseFake())
         
         var body: some View {
             HerosListView(viewModel: viewModel, selectedHero: $selectedHero)

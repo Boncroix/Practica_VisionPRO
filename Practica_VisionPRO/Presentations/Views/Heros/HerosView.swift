@@ -12,7 +12,7 @@ import MarvelAppLibrary
 struct HerosView: View {
     
     // MARK: Properties
-    @State private var viewModel: HerosViewModel
+    @State var viewModel: HerosViewModel
     @State private var selectedHero: Hero?
     
     // MARK: Init
@@ -28,11 +28,13 @@ struct HerosView: View {
                      viewDestination: HerosListView(viewModel: viewModel,
                                                     selectedHero: $selectedHero))
                 .padding(16)
+                .id(0)
             
         } content: {
 
             DetailView(selectedhero: selectedHero)
                 .padding(16)
+                .id(1)
 
         } detail: {
             if let hero = selectedHero {
@@ -40,6 +42,7 @@ struct HerosView: View {
                 RootView(viewModel: vm,
                          viewDestination: SeriesListView(viewModel: vm))
                 .padding(16)
+                .id(2)
                 
             }
         }

@@ -40,18 +40,6 @@
       [
         "9353861C-6404-4DB1-837E-C9701D56FC67",
         "Root",
-        "SpatialAudio"
-      ],
-      {
-        "isExpanded" : false,
-        "isLocked" : false,
-        "selectedAudioFilePrim" : {
-          "string" : "\/Root\/soundMarvel_mp3"
-        }
-      },
-      [
-        "9353861C-6404-4DB1-837E-C9701D56FC67",
-        "Root",
         "AmbientAudio"
       ],
       {
@@ -64,10 +52,10 @@
       [
         "9353861C-6404-4DB1-837E-C9701D56FC67",
         "Root",
-        "SoundEmitter"
+        "SpatialAudio"
       ],
       {
-        "isExpanded" : true,
+        "isExpanded" : false,
         "isLocked" : false,
         "selectedAudioFilePrim" : {
           "string" : "\/Root\/soundMarvel_mp3"
@@ -80,6 +68,18 @@
       {
         "isExpanded" : true,
         "isLocked" : false
+      },
+      [
+        "9353861C-6404-4DB1-837E-C9701D56FC67",
+        "Root",
+        "SoundEmitter"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false,
+        "selectedAudioFilePrim" : {
+          "string" : "\/Root\/soundMarvel_mp3"
+        }
       }
     ]
   },
